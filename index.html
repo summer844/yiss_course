@@ -915,7 +915,7 @@
                     <div class="selected-list" id="selectedList">
                         <div class="empty-schedule">
                             <div class="empty-schedule-icon">📚</div>
-                            <p>Click "+ Add" on courses to build your schedule</p>
+                            <p>Click "+ Preview Schedule" on courses to build your schedule</p>
                         </div>
                     </div>
                     
@@ -960,7 +960,7 @@
             <div id="mobileSelectedList">
                 <div class="mobile-empty-schedule">
                     <div class="mobile-empty-schedule-icon">📚</div>
-                    <p>Click "+ Add" on courses to build your schedule</p>
+                    <p>Click "+ Preview Schedule" on courses to build your schedule</p>
                 </div>
             </div>
             <div class="mobile-credits-total">
@@ -1110,7 +1110,7 @@
                     </div>
                     <div class="card-actions">
                         <button class="btn btn-add ${isSelected ? 'added' : ''}" onclick="toggleCourse('${c.code}')">
-                            ${isSelected ? '✓ Added' : '+ Add'}
+                            ${isSelected ? '✓ Added' : '+ Preview Schedule'}
                         </button>
                         ${c.syllabus ? `<a href="${c.syllabus}" target="_blank" class="btn btn-syllabus">📄 Syllabus</a>` : ''}
                     </div>
@@ -1198,13 +1198,13 @@
                 const emptyHTML = `
                     <div class="empty-schedule">
                         <div class="empty-schedule-icon">📚</div>
-                        <p>Click "+ Add" on courses to build your schedule</p>
+                        <p>Click "+ Preview Schedule" on courses to build your schedule</p>
                     </div>
                 `;
                 const mobileEmptyHTML = `
                     <div class="mobile-empty-schedule">
                         <div class="mobile-empty-schedule-icon">📚</div>
-                        <p>Click "+ Add" on courses to build your schedule</p>
+                        <p>Click "+ Preview Schedule" on courses to build your schedule</p>
                     </div>
                 `;
                 if (list) list.innerHTML = emptyHTML;
